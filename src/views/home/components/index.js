@@ -20,8 +20,11 @@ export const Container = styled.div`
 `;
 
 export const Heading = styled.div`
+  font-weight: 800;
   font-size: 1.2rem;
+
   margin-bottom: 8px;
+
 `;
 
 export const HeadingContainerSpaceBetween = styled.div`
@@ -112,6 +115,15 @@ export const SuggestionFeedItem = styled.li`
     line-height: 1.5;
   }
 `;
+
+export const SuggeestionNotFound = styled.div
+`color:#888;
+font-size: 0.9rem;
+text-align: center;
+padding: 3rem 0;
+`
+
+;
 
 export const SuggestionForm = props => (
   <Formik initialValues={{ title: '', description: '' }} {...props}>
